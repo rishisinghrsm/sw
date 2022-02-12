@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swastik Hospital</title>
+    <link rel="stylesheet" href="uikit-3.10.0/css/uikit.css">
+    <!-- <link rel="stylesheet" href="suikit-3.10.0/css/uikit-rtl.css"> -->
+   
+    <script src="uikit-3.10.0/js/uikit.js"></script>
+    <script src="uikit-3.10.0/js/uikit-icons.min.js"></script>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+<!-- important link for iconsss -->
+<script src="https://use.fontawesome.com/43c6e6ceaa.js"></script>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!--fontawesome 5.0 script-->
+<script src="https://kit.fontawesome.com/c2d50e9928.js" crossorigin="anonymous"></script>
+<!--fontawesome 5.0 script-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!--font family
+font-family: 'Iceland', cursive;">
+
+3rd party link-->
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        
+    }
+    body{
+        background-color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+    nav{
+        background-color: #fff;
+        /* padding: 10px; */
+        margin:0;
+        align-items: center;
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 0 0 #fff;
+    }
+    
+    #ul{
+        /* background-color: #32a854; */
+        /* padding: 10px; */
+        margin:0;
+        align-items: center;
+    }
+    nav:hover{
+        box-shadow: 100 100 100 black ;
+        /* background-color: red; */
+    }
+    #ul li{
+        /* margin-left: 20px; */
+        list-style: none;
+        padding: 7px;
+        /* background-color: #32a854; */
+        border: 1px solid transparent;
+        text-align: center;
+        /* margin: auto; */
+        color: #32a854;
+
+        transition-duration: 1s;
+    }
+    #ul li a{
+        color: #32a854;
+        padding: 15px;
+        font-weight: 900;
+    }
+    #ul li a:hover{
+        text-decoration: none;
+        color: #fff;
+        /* background-color: #32a854; */
+        
+        
+    }
+    #ul li:hover{
+        text-decoration: none;
+        /* box-shadow: 5px 5px 10px #32a854; */
+        box-shadow: inset -200px -200px 1px #32a854;
+        
+    }
+    .img{
+        background-image: url('images/3.jpg');
+       margin: 0;
+      
+        min-height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        /* border: 10px solid #32a854; */
+
+    }
+    .img h2{
+        padding: 30px;
+        margin-bottom: -250px;
+
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        color:#fff ;
+        letter-spacing: 3px;
+        font-size: 50px;
+        text-shadow: 10px 10px 10px black;
+        transition-duration: 1s;
+    }
+    .img h4{
+        padding: 30px;
+        margin-top: -150px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        color:#fff ;
+        letter-spacing: 3px;
+        /* font-size: 50px; */
+        text-shadow: 10px 10px 10px black;
+        transition-duration: 1s;
+    }
+    .img h2:hover{
+        text-shadow:20px 10px 10px black;
+
+    }
+    .img h4:hover{
+        text-shadow:20px 10px 10px black;
+
+    }
+    #dvc{
+        font-size: 40px;
+        color:#32a854;
+        text-shadow: 5px 5px 1000px black;
+        letter-spacing: 3px;
+        font-family: 'Quintessential', cursive;
+    }
+    input{
+        padding: 7px;
+        border: 1px solid #32a854;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    li{
+        list-style-type: circle;
+    }
+    .cover_img{
+        background-size: cover;
+        background-position: center;
+    }
+    .uk-card-title{
+        color:#32a854;
+
+    }
+    #bar{
+        display:inline;
+    }
+    #cross{
+        display:inline;
+    }
+    @media (min-width:777px) {
+        
+        #bar{
+            display:none;
+        };
+        #cross{
+            display:none;
+        }
+    }
+    #cross{
+    display:none;
+    /* position: absolute; */
+}
+
+.hidden{
+    display:inherit;
+    margin: auto;
+}
+@media (max-width:760px) {
+    .hidden{
+        display:none;
+    }
+    #img{
+        display:none;
+    }
+   
+}
+@media (min-width:760px) {
+    
+    #bar{
+        display:none;
+    }
+   
+    
+}
+
+    /* cadetblue */
+</style>
+<body>
+  <nav >
+
+      <div class="container-fluid w-100"  id="ul">
+          
+          <!-- <ul  style="display: flex;margin: auto;width: 100%;"> -->
+              <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-md-2 text-center p-3  align-items-center justify-content-center">
+                  <h2 class="w-75 p-4 d-inline">LOGO</h2>
+                  <span id="bar" class="float-right p-3"><i class="fa fa-bars p-1"></i></span>
+          <span id="cross" class="float-right p-3"><i class="fa fa-times-circle p-1"></i></span>
+                </div>
+              <div class="col-md-1 hidden p-1">
+
+                  <li ><a href="#"> HOME</a></li>
+              </div>
+              <div class="col-md-1 hidden p-1">
+
+                  <li ><a href="#"> ABOUT</a></li>
+              </div>
+              <div class="col-md-1 hidden p-1">
+
+                  <li ><a href="#"> SERVICES</a></li>
+              </div>
+              <div class="col-md-1 hidden p-1">
+
+                  <li ><a href="#"> CONTACT</a></li>
+              </div>
+              <div class="col-md-3 hidden p-1">
+
+                  <li ><a href="#"> BOOK ONLINE</a> </li>
+              </div>
+              <div class="col-md-3 hidden p-3 text-center">
+                <input  class="hidden p-3" type="search" placeholder="SEARCH" name="" id="">
+              </div>
+          </div>
+        </ul>
+      </div>
+          <!-- <li class="float-right"></li> -->
+          
+        
+  </nav>
+
+<br><br><br>
+
+<!-- <div class="img">
+    <!-- <img src="images/3.jpg" alt="" width="100%" height="50%"> -->
+    <!-- <h2>SWASTIK HOSPITAL</h2>
+    <h4> UROLOGICAL CENTRE</h4> -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, amet.</p> -->
+<!-- </div>
+<br> --> 
+<p style="transform: rotate(270deg);position: absolute;left: -140px;top:350px;z-index: 99;font-weight:900;color:#32a854"> Now we are Part of DVC Approved Hospital</p>
+<div class="container">
+    <div class="row ">
+        
+           
+        
+        <div class="col-md-6 p-5 ">
+            
+            <img src="images/doctor1.png" alt="" width="100%">
+        </div>
+        <div class="col-md-6 p-5 lead font-weight-bolder"  id="dvc">
+            <p>SWASTIK HOSPITAL AND UROLOGICAL CENTRE</p>
+            <!-- <p>Now we are Part of DVC Approved Hospital</p> -->
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<div class="container" style="list-style-type: circle;">
+    <div class="row">
+        <div class="col-md-4">
+            
+                    <div class="uk-card uk-card-default h-100">
+                        <div class="uk-card-media-top">
+                            <img src="images/cir.png" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title" style="color: #32a854;">DEPARTMENTS</h3>
+                            <ul>
+                                <li>Department of Urology & Andrology</li>
+                                <li> Department of Gynaecology/ Obstetrics</li>
+                                <li>Laproscopic Surgery/Surgery</li>
+                                  <li>Department of cardiology</li>
+                                   <li>Department of Internal Medicine</li>
+                                   <li> Department of Paediatrics-Neonatology Division</li>
+                                   <li>Department of Ophthalmology</li>
+                                   <li> Department of Anaesthesia</li>
+                                   <li> Department of Gastroenterology</li>
+                                     <li> Department of Radiodiagnosis</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+        </div>
+        <div class="col-md-4">
+
+            <div class="uk-card uk-card-default h-100">
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title" style="color: #32a854;">FACILITY</h3>
+                    <ul>
+                        <li>Multi Specialty hospital</li>
+
+                        <li>Emergency 24X7</li>
+                            
+                            <li>Hi-Tech 8 Bedded ICU</li>
+                            
+                            <li>Stone, Urology, Lithotripsy, Urodynamics</li>
+                            
+                            <li>Pain less Delivery</li>
+                            
+                            <li>Level 2 Nursery</li>
+                            
+                            <li>24 hrs Central Laboratory</li>
+                            
+                            <li>Laproscopic Surgery & Endoscopy</li>
+                            
+                            <li>24 hrs Radiology service</li>
+                            
+                            <li>Physiotherapy</li>
+                            
+                            <li>Ophthalmology</li>
+                            
+                            <li>Cardiology</li>
+                    </ul>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="images/doctor.png" alt="">
+                </div>
+            </div>
+
+        
+        </div>
+        <div class="col-md-4 ">
+            
+                    <div class="uk-card uk-card-default h-100 ">
+                        <div class="uk-card-media-top">
+                            <img src="images/undraw_medical_care_movn.png" alt="">
+                        </div>
+                        <div class="uk-card-body d-flex align-items-center justify-content-center">
+                            <div class="">
+                            <h3 class="uk-card-title" style="color: #32a854;">
+                                OTHER DEPARTMENT</h3>
+                            <ul>
+                                <li>Department of Pathology 24 Hour</li>
+                                <li>Department of Dentistry</li>
+                                <li>Department of Pharmacy</li>
+                                  
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+<div class="uk-card float-right w-75 uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/chair.png" class="cover_img" alt="" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div style="display: flex;align-items: center;">
+        <div class="uk-card-body">
+            <h3 class="uk-card-title" style="color: #32a854;">Vision Statement</h3>
+            <p>Swastik Hospital & Urological Centre aspires to Provide quality Hitech health care services to all sections of society at affordable cost.</p>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card uk-card-default shadow w-75 uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <img src="images/injurd.png" class="cover_img" alt="" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div style="display: flex;align-items: center;">
+        <div class="uk-card-body">
+            <h3 class="uk-card-title" style="color: #32a854;">Mission Statement</h3>
+            <p>To provide compassionate patient care by our dedicated medical and support staff for satisfied service delivery..</p>
+        </div>
+    </div>
+</div>
+
+<div class="uk-card float-right w-75 uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/medical.png" class="cover_img" alt="" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div  style="display: flex;align-items: center;">
+        <div class="uk-card-body">
+            <h3 class="uk-card-title" style="color: #32a854;">Quality Policy</h3>
+            <p>We are committed to deliver quality healthcare and maximize our customer satisfaction and we work towards establishing an environment that motivates our employees to do things right first time and every</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    $(document).ready(function(){
+        $('#bar').click(function(){
+            $('.hidden').slideToggle();
+            $('#bar').hide();
+            // $(this).toggleClass('fa fa-bars');
+
+            $('#cross').show();
+        });
+
+        $('#cross').click(function(){
+            $('.hidden').slideToggle();
+            // $(this).toggleClass('fa fa-times-circle');
+
+            $('#bar').show();
+            $('#cross').hide();
+        });
+
+        $('.nav_active').click(function(){
+            $('.nav_active').removeClass('active');
+            $(this).toggleClass('active');
+        });
+       
+    });
+
+</script>
+</body>
+</html>
